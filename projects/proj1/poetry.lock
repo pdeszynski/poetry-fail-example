@@ -1,0 +1,55 @@
+[[package]]
+name = "proj2"
+version = "0.1.0"
+description = ""
+category = "main"
+optional = false
+python-versions = "^3.9"
+develop = true
+
+[package.dependencies]
+proj3 = "0.1.0"
+
+[package.source]
+type = "directory"
+url = "../proj2"
+
+[[package]]
+name = "proj3"
+version = "0.1.0"
+description = ""
+category = "main"
+optional = false
+python-versions = "^3.9"
+develop = false
+
+[package.dependencies]
+pydash = "^5.0.0"
+
+[package.source]
+type = "directory"
+url = "../proj3"
+
+[[package]]
+name = "pydash"
+version = "5.0.0"
+description = "The kitchen sink of Python utility libraries for doing \"stuff\" in a functional way. Based on the Lo-Dash Javascript library."
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.extras]
+dev = ["black", "coverage", "docformatter", "flake8", "flake8-black", "flake8-bugbear", "flake8-isort", "invoke", "isort", "pylint", "pytest", "pytest-cov", "pytest-flake8", "pytest-pylint", "sphinx", "sphinx-rtd-theme", "tox", "twine", "wheel"]
+
+[metadata]
+lock-version = "1.1"
+python-versions = "^3.9"
+content-hash = "d0021693f3767c74e3d91b7d87ef8b07a87c7a9ea8ca2fbe50eccc2721e7e0ac"
+
+[metadata.files]
+proj2 = []
+proj3 = []
+pydash = [
+    {file = "pydash-5.0.0-py3-none-any.whl", hash = "sha256:0d87f879a3df4ad9389ab6d63c69eea078517d41541ddd5744cfcff3396e8543"},
+    {file = "pydash-5.0.0.tar.gz", hash = "sha256:845262df83b5411742e5f7f7dbfa5ed4d0ddac6d7d0a13c4375c6a3c40d4e8f4"},
+]
